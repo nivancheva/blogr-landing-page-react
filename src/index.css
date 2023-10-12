@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --clr-text-white: hsl(0, 0%, 100%);
+    --clr-footer-text: hsl(240, 2%, 79%);
+    --clr-body-copy: hsl(207, 13%, 34%);
+    --clr-footer-bg: hsl(240, 10%, 16%);
+
+    --clr-red: hsl(356, 100%, 66%);
+    --clr-bg-hover: hsl(355, 100%, 74%);
+    --clr-headings: hsl(208, 49%, 24%);
+
+    --gradient-mobile-nav: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --gradient-body-bg: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+    --ff-accent: 'Overpass', sans-serif;
+    --ff-main: 'Ubuntu', sans-serif;
+
+    --fw-light-accent: 300;
+    --fw-bold-accent: 600;
+    --fw-regular-main: 400;
+    --fw-medium-main: 500;
+    --fw-bold-main: 700;
+
+    --fz-main: 1rem;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
