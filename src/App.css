@@ -6,10 +6,25 @@
 .button-toggle {
     background-color: inherit;
     border: 0;
+
+    margin-left: auto;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    padding-top: 3.6875rem;
 }
 
 .menu-hidden {
     display: none;
+}
+
+@media (max-width:799px) {
+    .navigation-bar {
+        position: absolute;
+    }
 }
 
 @media (min-width:800px) {
@@ -19,5 +34,24 @@
 
     .button-toggle {
         display: none;
+    }
+
+    .header {
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+
+    .login-buttons {
+       margin-left: auto;
+    }
+
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .links-nav {
+        display: flex;
+        gap: 2rem;
     }
 }

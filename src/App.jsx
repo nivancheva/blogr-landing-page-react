@@ -22,11 +22,11 @@ function App() {
 
 
       <div className='hero-wrapper'>
-        <header className='container'>
+        <header className='container header'>
           <picture><img src={logo} alt='logo'/></picture>
-          <div>
-            <nav className={`${menuVisible ? "" : "menu-hidden"}`}>
-              <ul>
+          <div className={`navigation-bar ${menuVisible ? "" : "menu-hidden"}`}>
+            <nav>
+              <ul className='links-nav'>
                 {links.map((link, idx) => {
                   return (
                     <li key={idx}>
@@ -36,15 +36,15 @@ function App() {
                 })}                
               </ul>      
             </nav>
-            <div className={`${menuVisible ? "" : "menu-hidden"}`}>
+            <div className='login-buttons'>
               <button className='button button-bare'>Login</button>
               <button className='button button-primary'>Sign Up</button>
-            </div>
-            <button onClick={toggleMenu} className='button-toggle'>
-              <img src={menuVisible ? iconClose : iconHamburger}/>
-            </button>
+            </div>        
           </div>
-          
+          <button onClick={toggleMenu} className='button-toggle'>
+              <img src={menuVisible ? iconClose : iconHamburger}/>
+          </button>
+
         </header>
 
         <div className='container'>

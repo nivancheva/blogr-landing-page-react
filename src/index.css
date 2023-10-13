@@ -67,7 +67,7 @@ a {
 
 .button {
     border: 0;
-    padding: .9375rem 1.5rem;
+    padding: .9375rem 2.5rem;
     border-radius: 2em;
     font-family: var(--ff-accent);
     font-weight: var(--fw-bold-accent);
