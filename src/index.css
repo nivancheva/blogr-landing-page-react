@@ -73,7 +73,8 @@ a {
     font-weight: var(--fw-bold-accent);
 }
 
-.button:hover {
+.button:hover,
+.button-toggle:hover {
     cursor: pointer;
 }
 

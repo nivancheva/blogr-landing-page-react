@@ -1,5 +1,8 @@
 import './App.css'
+import { useState } from 'react';
 import logo from './images/logo.svg';
+import iconHamburger from './images/icon-hamburger.svg';
+import iconClose from './images/icon-close.svg';
 
 const links = [
   {text:'Product', url: "#"},
@@ -8,15 +11,21 @@ const links = [
 ];
 
 function App() {
+  const [menuVisible, setMenuvisile] = useState(false)
+
+  function toggleMenu() {
+    setMenuvisile(!menuVisible);
+  }
+
   return (
     <div>
 
 
       <div className='hero-wrapper'>
         <header className='container'>
-          <img src={logo} alt='logo'/>
+          <picture><img src={logo} alt='logo'/></picture>
           <div>
-            <nav>
+            <nav className={`${menuVisible ? "" : "menu-hidden"}`}>
               <ul>
                 {links.map((link, idx) => {
                   return (
@@ -27,12 +36,15 @@ function App() {
                 })}                
               </ul>      
             </nav>
-            <div>
+            <div className={`${menuVisible ? "" : "menu-hidden"}`}>
               <button className='button button-bare'>Login</button>
               <button className='button button-primary'>Sign Up</button>
             </div>
+            <button onClick={toggleMenu} className='button-toggle'>
+              <img src={menuVisible ? iconClose : iconHamburger}/>
+            </button>
           </div>
-
+          
         </header>
 
         <div className='container'>
