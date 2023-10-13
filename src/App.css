@@ -10,11 +10,31 @@
     margin-left: auto;
 }
 
+.button-sign_up {
+    background: var(--gradient-mobile-nav);
+    color: var(--clr-text-white);
+    width: fit-content;
+    margin-inline: auto;
+}
+
 .header {
     display: grid;
     align-items: center;
     grid-template-columns: auto 1fr;
     padding-top: 3.6875rem;
+    padding-bottom: 2.3125rem;
+
+    position: relative;
+}
+
+.links-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.login-buttons {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .menu-hidden {
@@ -24,7 +44,30 @@
 @media (max-width:799px) {
     .navigation-bar {
         position: absolute;
+        top: 100%;
+
+        text-align: center;
+        background-color: var(--clr-text-white);
+        color: var(--clr-footer-bg);
+        width: 100%;
+
+        padding: 1.5rem;
     }
+
+    .links-nav,
+    .login-buttons {
+        flex-direction: column;
+    }
+
+    .links-nav {
+        padding-bottom: 1.5rem;
+    }
+
+    .login-buttons {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--clr-footer-text);
+    }
+
 }
 
 @media (min-width:800px) {
@@ -36,6 +79,11 @@
         display: none;
     }
 
+    .button-sign_up {
+        background: var(--clr-text-white);
+        color: var(--clr-bg-hover);
+    }
+
     .header {
         justify-content: flex-start;
         gap: 4rem;
@@ -43,6 +91,7 @@
 
     .login-buttons {
        margin-left: auto;
+       gap: 2rem;
     }
 
     .navigation-bar {
@@ -51,7 +100,6 @@
     }
 
     .links-nav {
-        display: flex;
         gap: 2rem;
     }
 }

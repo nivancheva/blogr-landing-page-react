@@ -78,11 +78,6 @@ a {
     cursor: pointer;
 }
 
-@media (min-width:800px) {
-    .button {
-        padding: .9375rem 1.0625rem;;
-    }
-}
 
 .button-primary {
     background-color: var(--clr-text-white);
@@ -98,6 +93,7 @@ a {
     background-color: inherit;
     color: inherit;
     opacity: .6;
+    border: 0;
 }
 
 .button-bare:hover {
@@ -113,5 +109,11 @@ a {
 .button-outline:hover {
     color: var(--clr-bg-hover);
     background-color: var(--clr-text-white);
+}
+
+@media (min-width:800px) {
+    .button {
+        padding: .9375rem 1.0625rem;;
+    }
 }
 

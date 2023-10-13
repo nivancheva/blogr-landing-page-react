@@ -37,8 +37,8 @@ function App() {
               </ul>      
             </nav>
             <div className='login-buttons'>
-              <button className='button button-bare'>Login</button>
-              <button className='button button-primary'>Sign Up</button>
+              <button className='button-bare'>Login</button>
+              <button className='button button-sign_up'>Sign Up</button>
             </div>        
           </div>
           <button onClick={toggleMenu} className='button-toggle'>
