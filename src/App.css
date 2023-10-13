@@ -1,0 +1,4 @@
+.hero-wrapper {
+    background: var(--gradient-mobile-nav);
+    color: var(--clr-text-white)
+}

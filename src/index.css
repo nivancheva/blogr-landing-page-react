@@ -10,17 +10,17 @@
     --clr-bg-hover: hsl(355, 100%, 74%);
     --clr-headings: hsl(208, 49%, 24%);
 
-    --gradient-mobile-nav: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --gradient-mobile-nav: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     --gradient-body-bg: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 
-    --ff-accent: 'Overpass', sans-serif;
-    --ff-main: 'Ubuntu', sans-serif;
+    --ff-main: 'Overpass', sans-serif;
+    --ff-accent: 'Ubuntu', sans-serif;
 
-    --fw-light-accent: 300;
-    --fw-bold-accent: 600;
-    --fw-regular-main: 400;
-    --fw-medium-main: 500;
-    --fw-bold-main: 700;
+    --fw-light-main: 300;
+    --fw-bold-main: 600;
+    --fw-regular-accent: 400;
+    --fw-medium-accent: 500;
+    --fw-bold-accent: 700;
 
     --fz-main: 1rem;
 }
@@ -42,3 +42,75 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
     font: inherit;
 }
+
+body {
+    font-family: var(--ff-main);
+    font-weight: var(--fw-light-main);
+    font-size: var(--fz-main);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+.button {
+    border: 0;
+    padding: .9375rem 1.5rem;
+    border-radius: 2em;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold-accent);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+@media (min-width:800px) {
+    .button {
+        padding: .9375rem 1.0625rem;;
+    }
+}
+
+.button-primary {
+    background-color: var(--clr-text-white);
+    color: var(--clr-bg-hover);
+}
+
+.button-primary:hover {
+    color: inherit;
+    background-color: var(--clr-bg-hover);
+}
+
+.button-bare {
+    background-color: inherit;
+    color: inherit;
+    opacity: .6;
+}
+
+.button-bare:hover {
+    opacity: 1;
+}
+
+.button-outline {
+    background-color: inherit;
+    color: inherit;
+    border: 1px solid var(--clr-text-white);
+}
+
+.button-outline:hover {
+    color: var(--clr-bg-hover);
+    background-color: var(--clr-text-white);
+}
+
