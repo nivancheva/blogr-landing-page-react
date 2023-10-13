@@ -1,11 +1,13 @@
 .hero-wrapper {
     background: var(--gradient-mobile-nav);
-    color: var(--clr-text-white)
+    color: var(--clr-text-white);
+    border-bottom-left-radius: 5rem;
 }
 
 .button-toggle {
     background-color: inherit;
     border: 0;
+    opacity: .7;
 
     margin-left: auto;
 }
@@ -39,6 +41,22 @@
 
 .menu-hidden {
     display: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 6.75rem 0 9.75rem;   
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+}
+
+.start-buttons {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
 }
 
 @media (max-width:799px) {

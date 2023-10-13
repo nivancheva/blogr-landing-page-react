@@ -67,7 +67,7 @@ a {
 
 .button {
     border: 0;
-    padding: .9375rem 2.5rem;
+    padding: .9375rem 1.0625rem;
     border-radius: 2em;
     font-family: var(--ff-accent);
     font-weight: var(--fw-bold-accent);
@@ -112,8 +112,20 @@ a {
 }
 
 @media (min-width:800px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: var(--fw-bold-main);
+    }
+
+    .sub-header {
+        font-size: 1.25rem;
+        font-weight: var(--fw-light-main);
+        opacity: .7;
+    }
+
     .button {
         padding: .9375rem 1.0625rem;;
     }
+
 }
 

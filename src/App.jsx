@@ -47,10 +47,10 @@ function App() {
 
         </header>
 
-        <div className='container'>
+        <div className='container hero'>
           <h1>A modern publishing platform</h1>
-          <p>Grow your audience and build your online brand</p>
-          <div>
+          <p className='sub-header'>Grow your audience and build your online brand</p>
+          <div className='flex-group start-buttons'>
             <button className='button button-primary'>Start for Free</button>
             <button className='button button-outline'>Learn More</button>
           </div>
