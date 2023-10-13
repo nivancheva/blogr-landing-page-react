@@ -7,21 +7,36 @@ import iconClose from './images/icon-close.svg';
 const links = [
   {text:'Product', url: "#"},
   {text:'Company', url: "#"},
-  {text:'Connect', url: "#"}
+  {text:'Connect', url: "#", children: [
+    {text:'Contact', url: "#"},
+    {text:'Newsletter', url: "#"},
+    {text:'LinkedIn', url: "#"}
+  ]}
 ];
 
 function App() {
-  const [menuVisible, setMenuvisile] = useState(false)
+  const [menuVisible, setMenuvisile] = useState(false);
+  const [expandedLink, setExpandedLink] = useState({});
 
   function toggleMenu() {
     setMenuvisile(!menuVisible);
+  }
+
+  function toggleSubMenu(e, link) {
+    e.stopPropagation();
+
+    if (expandedLink === link) {
+      setExpandedLink({});
+    } else {
+      setExpandedLink(link);
+    }
   }
 
   return (
     <div>
 
 
-      <div className='hero-wrapper'>
+      <div className='hero-wrapper' onClick={(e) => toggleSubMenu(e, {})}>
         <header className='container header'>
           <picture><img src={logo} alt='logo'/></picture>
           <div className={`navigation-bar ${menuVisible ? "" : "menu-hidden"}`}>
@@ -30,7 +45,21 @@ function App() {
                 {links.map((link, idx) => {
                   return (
                     <li key={idx}>
-                      <a href={link.url}>{link.text}</a>
+                      <a onClick={(e) => toggleSubMenu(e, link)} href={link.url}>{link.text}</a>
+                      {
+                        expandedLink === link && link.children && 
+                        <div>
+                          <ul className='links-nav-submenu'>
+                            {link.children.map((child, childIdx) => {
+                              return (
+                                <li key={childIdx}>
+                                  <a href={child.url}>{child.text}</a>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      }
                     </li>
                   )
                 })}                

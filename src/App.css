@@ -32,6 +32,7 @@
 .links-nav {
     display: flex;
     gap: 1.5rem;
+    position: relative;
 }
 
 .login-buttons {
@@ -59,6 +60,7 @@
     margin-top: 3rem;
 }
 
+/* mobile */
 @media (max-width:799px) {
     .navigation-bar {
         position: absolute;
@@ -81,6 +83,11 @@
         padding-bottom: 1.5rem;
     }
 
+    .links-nav-submenu {
+        background-color: var(--clr-footer-text);
+        color: #000;
+    }
+
     .login-buttons {
         padding-top: 1.5rem;
         border-top: 1px solid var(--clr-footer-text);
@@ -88,6 +95,7 @@
 
 }
 
+/* desktop */
 @media (min-width:800px) {
     .menu-hidden {
         display: block;
@@ -119,5 +127,13 @@
 
     .links-nav {
         gap: 2rem;
+    }
+
+    .links-nav-submenu {
+        position: absolute;
+
+        /* temp */
+        background-color: white;
+        color: #000;
     }
 }
