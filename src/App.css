@@ -35,6 +35,15 @@
     position: relative;
 }
 
+.links-nav-submenu {
+    display: grid;
+    gap: 1rem;
+    font-size: .9375rem;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-medium-accent);
+    margin-top: 1.5rem;
+}
+
 .login-buttons {
     display: flex;
     gap: 1.5rem;
@@ -84,8 +93,10 @@
     }
 
     .links-nav-submenu {
-        background-color: var(--clr-footer-text);
-        color: #000;
+        background-color: var(--clr-link-nav-bg);
+        color: var(--clr-body-copy);
+        padding: 1.0623rem 6rem 1.5rem;
+        border-radius: .5rem;
     }
 
     .login-buttons {
@@ -125,15 +136,65 @@
         align-items: center;
     }
 
+    .links {
+        position: relative;
+    }
+
+    .links::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: var(--clr-text-white);
+        width: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .links:hover {
+        font-weight: var(--fw-bold-main);
+    }
+
+    .links:hover::after {
+        width: 100%;
+    }
+
     .links-nav {
         gap: 2rem;
     }
 
     .links-nav-submenu {
         position: absolute;
-
-        /* temp */
-        background-color: white;
-        color: #000;
+        right: 0;
+        transform: translate(50%, 10%);
+        background-color: var(--clr-text-white);
+        color: var(--clr-body-copy);
+        padding: 1.25rem 3rem 1.25rem 1.25rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: .5rem;
     }
+
+    .link-submenu:hover {
+        color: var( --clr-footer-bg);
+        font-weight: var(--fw-bold-accent);
+    }
+
+    .links {
+        position: relative;
+    }
+
+    /* .links::before {
+        content: "";
+        position: absolute;
+        background: url('./public/images/icon-arrow-light.svg');
+        width: 10px;
+        height: 7px;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+        transform: translate(10rem, -200%);
+    }
+
+    .links-rotate::before {
+        transform: rotate(180deg);
+    } */
 }
