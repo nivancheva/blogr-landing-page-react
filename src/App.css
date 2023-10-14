@@ -91,6 +91,12 @@
 
 /* mobile */
 @media (max-width:799px) {
+    .hero-wrapper {
+        background: url('./public/images/bg-pattern-intro-mobile.svg'), var(--gradient-mobile-nav);
+        background-position: 37% 35%;
+        background-repeat: no-repeat;
+    }
+
     .navigation-bar {
         position: absolute;
         top: 100%;
@@ -128,6 +134,12 @@
 
 /* desktop */
 @media (min-width:800px) {
+    .hero-wrapper {
+        background: url('./public/images/bg-pattern-intro-desktop.svg'), var(--gradient-mobile-nav);
+        background-position: 34% 53%;
+        background-repeat: no-repeat;
+    }
+
     .menu-hidden {
         display: block;
     }
