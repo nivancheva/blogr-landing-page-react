@@ -45,7 +45,7 @@ function App() {
                 {links.map((link, idx) => {
                   return (
                     <li key={idx}>
-                      <a className='links' onClick={(e) => toggleSubMenu(e, link)} href={link.url}>{link.text}</a>
+                      <a className={`links ${expandedLink === link ? 'links-rotate' : ''}`} onClick={(e) => toggleSubMenu(e, link)} href={link.url}>{link.text}</a>
                       {
                         expandedLink === link && link.children && 
                         <div>
