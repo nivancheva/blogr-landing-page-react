@@ -3,6 +3,7 @@
 :root {
     --clr-text-white: hsl(0, 0%, 100%);
     --clr-footer-text: hsl(240, 2%, 79%);
+    --clr-link-nav-bg: hsl(240, 2%, 93%);
     --clr-body-copy: hsl(207, 13%, 34%);
     --clr-footer-bg: hsl(240, 10%, 16%);
 
@@ -59,8 +60,12 @@ a {
     color: inherit;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 1110px;
     margin-inline: auto;
 }
@@ -98,6 +103,7 @@ a {
 
 .button-bare:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .button-outline {

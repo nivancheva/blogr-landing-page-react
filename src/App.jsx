@@ -45,14 +45,14 @@ function App() {
                 {links.map((link, idx) => {
                   return (
                     <li key={idx}>
-                      <a onClick={(e) => toggleSubMenu(e, link)} href={link.url}>{link.text}</a>
+                      <a className='links' onClick={(e) => toggleSubMenu(e, link)} href={link.url}>{link.text}</a>
                       {
                         expandedLink === link && link.children && 
                         <div>
                           <ul className='links-nav-submenu'>
                             {link.children.map((child, childIdx) => {
                               return (
-                                <li key={childIdx}>
+                                <li className='link-submenu' key={childIdx}>
                                   <a href={child.url}>{child.text}</a>
                                 </li>
                               );
