@@ -76,7 +76,7 @@ a:hover {
     border-radius: 2em;
     font-family: var(--ff-accent);
     font-weight: var(--fw-bold-accent);
-    transition: .6s ease;
+    transition: .3s ease;
 }
 
 .button:hover,
@@ -101,7 +101,7 @@ a:hover {
     color: inherit;
     opacity: .6;
     border: 0;
-    transition: .6s ease;
+    transition: .3s ease;
 }
 
 .button-bare:hover {
