@@ -89,7 +89,8 @@ a:hover {
     color: var(--clr-bg-hover);
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-sign_up:hover {
     color: inherit;
     background-color: var(--clr-bg-hover);
 }
