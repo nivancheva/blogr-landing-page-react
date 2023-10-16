@@ -1,0 +1,60 @@
+.sectionTwo-wrapper {
+    background: url("./public/images/bg-pattern-circles.svg"), var(--gradient-body-bg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    color: var(--clr-text-white);
+    letter-spacing: .5px;
+    line-height: 1.7;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+.sectionTwo-info h2 {
+     font-size: 2.5rem;
+     font-weight: var(--fw-bold-main);
+     letter-spacing: -1.2px;
+}
+
+.sectionTwo-info p {
+    opacity: .8;
+}
+
+.sectionTwo-img {
+    position: relative;
+}
+
+.phones {
+    position: absolute;
+}
+
+@media (max-width:799px) {
+    .phones-section {
+        padding: 13.75rem 0 6.8125rem;
+    }
+
+    .phones {
+        left:50%;
+        transform: translate(-50%, -100%);
+        max-width: min(100%, 400px);
+    }
+}
+
+@media (min-width:800px) {
+    .sectionTwo-wrapper {
+        background-position: -65% 80%;
+    }
+
+    .phones-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4rem;
+        padding-block: 6.9375rem;
+    }
+
+    .phones {
+        transform: translateY(-47%);
+        right: 0;
+        max-width: inherit;
+    }
+}
