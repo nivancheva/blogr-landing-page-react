@@ -117,6 +117,12 @@ a:hover {
     background-color: var(--clr-text-white);
 }
 
+@media (max-width:799px) {
+    body {
+        text-align: center;
+    }
+}
+
 @media (min-width:800px) {
     h1 {
         font-size: 4rem;

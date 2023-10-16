@@ -1,0 +1,46 @@
+.laptop-section {
+    color: var(--clr-body-copy);
+    font-weight: var(--fw-light-main);
+    line-height: 1.6;
+    letter-spacing: .5px;
+
+    display: grid;
+    gap: 2.5rem;
+}
+
+.laptop-section-info h3 {
+    color: var(--clr-headings);
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold-main);
+    margin-bottom: 1rem;
+}
+
+@media (max-width:799px) {
+    .laptop-section {
+        margin: 2.875rem 0 6.25rem;
+    }
+
+    .laptopImg {
+        margin-inline: auto;
+        margin-top: 4.9375rem;
+        margin-bottom: 2.875rem;
+    }
+}
+
+@media (min-width:800px) {
+    .laptop-section {
+        gap: 4rem;
+    }
+
+    .section-three-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4rem;
+        margin: 18.75rem 0 18.75rem;
+    }
+
+    .laptopImg {
+        transform: scale(1.7) translate(-27%);
+    }
+}
