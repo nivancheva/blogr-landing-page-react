@@ -3,6 +3,7 @@ import { useState } from 'react';
 import logo from './images/logo.svg';
 import iconHamburger from './images/icon-hamburger.svg';
 import iconClose from './images/icon-close.svg';
+import Footer from './components/Footer';
 
 const links = [
   {text:'Product', url: "#"},
@@ -88,6 +89,8 @@ function App() {
       </div>
 
       {/* ... */}
+
+      <Footer />
     </div>
   )
 }
