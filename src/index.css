@@ -76,7 +76,7 @@ a:hover {
     border-radius: 2em;
     font-family: var(--ff-accent);
     font-weight: var(--fw-bold-accent);
-    transition: 0.3s ease;
+    transition: .6s ease;
 }
 
 .button:hover,
