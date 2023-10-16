@@ -14,13 +14,13 @@ const companyInfo = [
     {text:'Team', url: "#"},
     {text:'Blog', url: "#"},
     {text:'Careers', url: "#"}
-]
+];
 
 const connections = [
     {text:'Contact', url: "#"},
     {text:'Newsletter', url: "#"},
     {text:'LinkedIn', url: "#"}
-]
+];
 
 export default function Footer() {
     return (
@@ -28,14 +28,14 @@ export default function Footer() {
             <div className='container footer'>
                 <img className='footer-logo' src={logo} alt='logo'/>
                 <div>
-                        <h4>Product</h4>
-                        <ul>
-                            {products.map((product, productIdx) => {
-                                return (
-                                    <li key={productIdx}><a className='footer_links' href={product.url}>{product.text}</a></li>
-                                )
-                            })}
-                        </ul>
+                    <h4>Product</h4>
+                    <ul>
+                        {products.map((product, productIdx) => {
+                            return (
+                                <li key={productIdx}><a className='footer_links' href={product.url}>{product.text}</a></li>
+                            )
+                        })}
+                    </ul>
                 </div>
                 <div>
                     <h4>Company</h4>
