@@ -101,6 +101,7 @@ a:hover {
     color: inherit;
     opacity: .6;
     border: 0;
+    transition: .6s ease;
 }
 
 .button-bare:hover {
